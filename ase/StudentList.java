@@ -83,17 +83,9 @@ public class StudentList {
 		{
 
 			String contents = LoadData();
+			String words[] = contents.split(",");
 			char a[] = contents.toCharArray();
-			boolean in_word = false;
-			int count=0;
-			for(char c:a) {
-				if(c ==' ') 
-				{
-					if (!in_word) {	count++; in_word =true;	}
-					else { in_word=false;}			
-				}
-			}
-			System.out.println(count +" word(s) found " + a.length);
+			System.out.println(words.length +" word(s) found " + a.length);
 			System.out.println(enddialog);
 		}
 	}
