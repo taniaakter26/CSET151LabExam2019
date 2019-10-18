@@ -4,6 +4,7 @@ import java.text.*;
 import java.util.*;
 import static ase.Constants.*;
 public class StudentList {
+    //Data Reader
 	public static String LoadData(){
 
 		System.out.println(startdialog);
@@ -19,6 +20,7 @@ public class StudentList {
 		}
 		return contents;
 	}
+	// Data Writer
 	public static void writeData(String[] args){
 		System.out.println(startdialog);
 		try {
@@ -35,6 +37,7 @@ public class StudentList {
 
 		System.out.println(enddialog);
 	};
+	//Main Function
 	public static void main(String[] args) {
 	if(args.length == 0){
 		System.out.println(usage);
@@ -88,6 +91,7 @@ public class StudentList {
 			System.out.println(words.length +" word(s) found " + a.length);
 			System.out.println(enddialog);
 		} else {
+		    //Handling invalid arguements
 			System.out.println(Invalidmsg);
 			return;
 		}
