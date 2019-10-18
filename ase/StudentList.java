@@ -87,6 +87,9 @@ public class StudentList {
 			char a[] = contents.toCharArray();
 			System.out.println(words.length +" word(s) found " + a.length);
 			System.out.println(enddialog);
+		} else {
+			System.out.println(Invalidmsg);
+			return;
 		}
 	}
 }
