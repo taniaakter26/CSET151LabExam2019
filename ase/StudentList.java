@@ -69,12 +69,11 @@ public class StudentList {
 
 			String contents = LoadData();
 			String words[] = contents.split(",");
-			boolean done = false;
 			String t = args[0].substring(1);
-			for(int idx = 0; idx<words.length && !done; idx++) {
+			for(int idx = 0; idx<words.length; idx++) {
 				if(words[idx].equals(t)) {
 					System.out.println("We found it!");
-						done=true;
+						break;
 				}
 			}
 
